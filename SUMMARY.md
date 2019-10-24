@@ -1,18 +1,20 @@
 #Installation steps
-go get github.com/Eliath/testTeamCMP
+go get github.com/Ahrimal/teamCMP/...
 
 #How to run your code / tests
-Build: go build .
-
-Run: testTeamCMP [-a | <source_name>]
+Build:
+1. cd $GOPATH/src/github.com/Ahrimal/teamCMP/
+2. go build .
+3. teamCMP [-a | <source_name>]
 
 -a means import all videos from all sources
 
 Test: go run ./test
 
 For docker: 
-docker build -t testTeamCMP
-docker run -it testTeamCMP [-a | <source_name>]
+sudo docker image build -t team_cmp .
+sudo docker run team_cmp [-a | <source_name>]
+docker run -it testTeamCMP 
 
 #Where to find your code
 You can find the code at: 
