@@ -2,9 +2,9 @@ package models
 
 import (
 	"errors"
+	"github.com/Ahrimal/teamCMP/connector"
 	"math/rand"
 	"sync"
-	"teamCMP/connector"
 	"time"
 )
 

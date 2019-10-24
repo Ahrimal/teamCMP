@@ -1,7 +1,10 @@
 # go application
 FROM golang:1.12.0-alpine3.9
-RUN mkdir /app
-ADD . /app
-WORKDIR /app
-RUN go build -o main .
-CMD ["/app/main"]
+RUN mkdir /teamCMP
+ADD . /teamCMP
+WORKDIR /teamCMP
+RUN apk update && apk upgrade && \
+    apk add --no-cache bash git openssh
+RUN go get gopkg.in/yaml.v2
+RUN go build .
+CMD ["/teamCMP/teamCMP"]

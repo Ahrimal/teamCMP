@@ -2,9 +2,9 @@ package fileReaders
 
 import (
 	"encoding/json"
+	"github.com/Ahrimal/teamCMP/models"
 	"io/ioutil"
 	"os"
-	"teamCMP/models"
 )
 
 /// Json Importer

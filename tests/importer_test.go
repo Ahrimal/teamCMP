@@ -1,7 +1,7 @@
 package test
 
 import (
-	"teamCMP/fileReaders"
+	"github.com/Ahrimal/teamCMP/fileReaders"
 	"testing"
 )
 

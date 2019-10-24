@@ -1,9 +1,9 @@
 package test
 
 import (
+	"github.com/Ahrimal/teamCMP/fileReaders"
 	"io/ioutil"
 	"log"
-	"teamCMP/fileReaders"
 	"testing"
 )
 

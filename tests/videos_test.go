@@ -1,7 +1,7 @@
 package test
 
 import (
-	"teamCMP/models"
+	"github.com/Ahrimal/teamCMP/models"
 	"testing"
 )
 

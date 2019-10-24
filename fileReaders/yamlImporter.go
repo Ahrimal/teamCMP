@@ -1,11 +1,11 @@
 package fileReaders
 
 import (
+	"github.com/Ahrimal/teamCMP/models"
 	"gopkg.in/yaml.v2"
 	"io/ioutil"
 	"os"
 	"strings"
-	"teamCMP/models"
 )
 
 /// Yaml Importer

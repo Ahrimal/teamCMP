@@ -1,9 +1,9 @@
 package main
 
 import (
+	"github.com/Ahrimal/teamCMP/fileReaders"
 	"math/rand"
 	"os"
-	"teamCMP/fileReaders"
 	"time"
 )
 

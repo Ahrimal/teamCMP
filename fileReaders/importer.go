@@ -2,10 +2,10 @@ package fileReaders
 
 import (
 	"errors"
+	"github.com/Ahrimal/teamCMP/models"
 	"os"
 	"strings"
 	"sync"
-	"teamCMP/models"
 )
 
 type FileImporter interface {
