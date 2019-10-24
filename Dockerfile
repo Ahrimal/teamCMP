@@ -6,5 +6,6 @@ WORKDIR /teamCMP
 RUN apk update && apk upgrade && \
     apk add --no-cache bash git openssh
 RUN go get gopkg.in/yaml.v2
+RUN go get github.com/Ahrimal/teamCMP
 RUN go build .
-CMD ["/teamCMP/teamCMP"]
+ENTRYPOINT ["/teamCMP/teamCMP"]
