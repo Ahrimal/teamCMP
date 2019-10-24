@@ -36,12 +36,11 @@ func (feedImporter FeedImporter) GetVideosData(url, source, user, password strin
 	// Gets all the filenames in the folder
 	fileNames, err := feedImporter.getFileNames(url, source)
 	if err != nil {
-		println(err.Error())
-	}
+		if len(fileNames) == 0 {
+			return err
+		}
 
-	if len(fileNames) == 0 {
-		println("No source files found... nothing to import")
-		return err
+		println(err.Error())
 	}
 
 	// Range between all fileNames and import the videos form each file
